@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from "react";
-import Nav from "../components/NavbarHome";
+import Nav from "../components/NavbarDashboard";
 import Sidebar from "../components/Sidebar";
 import '../styles/App.css';
 // import { toast } from "react-toastify";
