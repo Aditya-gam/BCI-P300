@@ -33,7 +33,7 @@ router.post("/register", validInfo, async (req, res) => {
     // 4. Enter the new user inside our database
 
     const newUser = await pool.query(
-      "INSERT INTO users (user_name, user_email, user_password, user_access) VALUES ($1, $2, $3) RETURNING *",
+      "INSERT INTO users (user_name, user_email, user_password, user_access) VALUES ($1, $2, $3, $4) RETURNING *",
       [name, email, bcryptPassword, access]
     );
 
