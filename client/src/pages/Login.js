@@ -7,9 +7,10 @@ const Login = ({ setAuth }) => {
   const [inputs, setInputs] = useState({
     email: "",
     password: "",
+    access: ""
   });
 
-  const { email, password } = inputs;
+  const { email, password, access } = inputs;
 
   const onChange = (e) => {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
@@ -19,7 +20,7 @@ const Login = ({ setAuth }) => {
     e.preventDefault();
 
     try {
-      const body = { email, password };
+      const body = { email, password, access };
 
       const response = await fetch("http://localhost:5000/auth/login", {
         method: "POST",
@@ -33,7 +34,7 @@ const Login = ({ setAuth }) => {
         localStorage.setItem("token", parseRes.token);
 
         setAuth(true);
-        toast.success("login successful!");
+        toast.success("Login Successful!");
       } else {
         setAuth(false);
         toast.error(parseRes);
@@ -71,6 +72,12 @@ const Login = ({ setAuth }) => {
               value={password}
               onChange={(e) => onChange(e)}
             />
+
+              <select id="list" onChange={(e) => onChange(e)} className="form-control my-3" placeholder="Access Type">
+                <option value="patient">Patient</option>
+                <option value="doctor">Doctor</option>
+                <option value="admin">Admin</option>
+              </select>
 
             <button className="w-100 btn btn-lg btn-primary" type="submit">
               Sign in
