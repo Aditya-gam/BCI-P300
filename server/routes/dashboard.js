@@ -8,7 +8,7 @@ router.get("/", authorization, async (req, res) => {
     // res.json(req.user);
 
     const user = await pool.query(
-      "SELECT user_id, user_name, user_email FROM users WHERE user_id = $1",
+      "SELECT user_id, user_name, user_email, user_access FROM users WHERE user_id = $1",
       [req.user]
     );
 
