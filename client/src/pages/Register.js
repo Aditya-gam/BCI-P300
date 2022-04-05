@@ -9,10 +9,11 @@ const Register = ({ setRegister }) => {
     email: "",
     password: "",
     name: "",
-    access: ""
+    // access: "",
   });
 
-  const { email, password, name, access} = inputs;
+  const { email, password, name } = inputs;
+  // const confirmPassword = "";
 
   const onChange = (e) => {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
@@ -22,7 +23,7 @@ const Register = ({ setRegister }) => {
     e.preventDefault();
 
     try {
-      const body = { email, password, name, access};
+      const body = { email, password, name };
 
       const response = await fetch("http://localhost:5000/auth/register", {
         method: "POST",
@@ -89,11 +90,26 @@ const Register = ({ setRegister }) => {
                 onChange={(e) => onChange(e)}
               />
 
-              <select id="list" onChange={(e) => onChange(e)} className="form-control my-3" placeholder="Access Type">
+              {/* <input
+                type="password"
+                name="password"
+                className="form-control my-3"
+                placeholder="Confirm Password"
+                value={confirmPassword}
+                onChange={(e) => onChange(e)}
+              /> */}
+
+              {/* <select
+                id="list"
+                onChange={(e) => onChange(e)}
+                className="form-control my-3"
+                placeholder="Access Type"
+                value={access}
+              >
                 <option value="patient">Patient</option>
                 <option value="doctor">Doctor</option>
                 <option value="admin">Admin</option>
-              </select>
+              </select> */}
 
               <button className="w-100 btn btn-lg btn-primary" type="submit">
                 Submit
