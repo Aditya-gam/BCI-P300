@@ -11,13 +11,13 @@ router.post("/register", validInfo, async (req, res) => {
   try {
     // 1. Destructure the req.body (name, email, password)
 
-    const { name, email, password } = req.body;
+    const { name, email, password, access } = req.body;
 
     // 2. Check if user exist (if user exist then throw error)
 
     const user = await pool.query(
-      "SELECT * FROM users2 WHERE user_email = $1",
-      [email]
+      "SELECT * FROM users WHERE user_email = $1 And user_access = $2",
+      [email, access]
     );
 
     if (user.rows.length != 0) {
@@ -33,8 +33,8 @@ router.post("/register", validInfo, async (req, res) => {
     // 4. Enter the new user inside our database
 
     const newUser = await pool.query(
-      "INSERT INTO users2 (user_name, user_email, user_password) VALUES ($1, $2, $3) RETURNING *",
-      [name, email, bcryptPassword]
+      "INSERT INTO users (user_name, user_email, user_password, user_access) VALUES ($1, $2, $3, $4) RETURNING *",
+      [name, email, bcryptPassword, access]
     );
 
     // 5. Generating our JWT token
@@ -54,13 +54,13 @@ router.post("/login", validInfo, async (req, res) => {
   try {
     // 1. Destructure the req.body (name, email, password)
 
-    const { email, password } = req.body;
+    const { email, password, access } = req.body;
 
     // 2. Check if user doesn't exist (if not then throw error)
 
     const user = await pool.query(
-      "SELECT * FROM users2 WHERE user_email = $1",
-      [email]
+      "SELECT * FROM users WHERE user_email = $1 AND user_access = $2",
+      [email, access]
     );
 
     if (user.rows.length === 0) {
