@@ -98,18 +98,18 @@ const Navbar = ({ isAuthenticated, setAuth, setRegister, toggleIsOpen }) => {
                     </NavLinksR>
                   </NavItem>
                   <NavItem>
-                      <NavLinksR
-                        to="signup"
-                        // smooth={true}
-                        // duration={500}
-                        spy={true}
-                        exact="true"
-                        offset={-80}
-                        activeClassName="active"
-                      >
-                        Sign Up
-                      </NavLinksR>
-                    </NavItem>
+                    <NavLinksR
+                      to="signup"
+                      // smooth={true}
+                      // duration={500}
+                      spy={true}
+                      exact="true"
+                      offset={-80}
+                      activeClassName="active"
+                    >
+                      Sign Up
+                    </NavLinksR>
+                  </NavItem>
                   <NavItem>
                     <NavLinksR to="alert">Alert</NavLinksR>
                   </NavItem>
@@ -128,7 +128,7 @@ const Navbar = ({ isAuthenticated, setAuth, setRegister, toggleIsOpen }) => {
           <IconContext.Provider value={{ color: "#fff" }}>
             <Nav scrollNav={scrollNav}>
               <NavbarContainer className="navbar">
-                <NavLogo className="head-nav" to="/">
+                <NavLogo className="head-nav" to="/dashboard">
                   BCI P300
                 </NavLogo>
                 <MobileIcon onClick={toggleIsOpen}>

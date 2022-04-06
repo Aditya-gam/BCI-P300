@@ -1,10 +1,28 @@
 import React, { Fragment, useState, useEffect } from "react";
 import Nav from "../components/NavbarDashboard";
 import Sidebar from "../components/Sidebar";
-import '../styles/App.css';
+// import ButtonSection from "../components/ButtonSection";
+// import {
+//   buttonObjOne,
+//   buttonObjTwo,
+//   buttonObjThree,
+//   buttonObjFour,
+// } from "../components/ButtonSection/Data";
+import { ButtonR } from "../components/ButtonElements";
+import "../styles/App.css";
+import "../styles/Dashboard.css";
 // import { toast } from "react-toastify";
 
-const Dashboard = ({ isAuthenticated, setAuth, setRegister, isOpen, toggleIsOpen }) => {
+const Dashboard = ({
+  isAuthenticated,
+  setAuth,
+  setRegister,
+  isOpen,
+  toggleIsOpen,
+  primary,
+  dark,
+  dark2,
+}) => {
   const [name, setName] = useState("");
 
   async function getName() {
@@ -35,31 +53,84 @@ const Dashboard = ({ isAuthenticated, setAuth, setRegister, isOpen, toggleIsOpen
   }, []);
   return (
     <div className="dashboard">
-    
       <Sidebar
-          animate={true}
-          isAuthenticated={isAuthenticated}
-          setAuth={setAuth}
-          setRegister={setRegister}
-          isOpen={isOpen}
-          toggleIsOpen={toggleIsOpen}
-        />
-        <Nav
-          animate={true}
-          isAuthenticated={isAuthenticated}
-          setAuth={setAuth}
-          setRegister={setRegister}
-          toggleIsOpen={toggleIsOpen}
-        />
-        <div className="fullpage">
-      <Fragment>
-        <h1>Dashboard</h1>
-        <h1 className="text-center my-5">Hello {name}</h1>
-
-        {/* <button className="btn btn-lg btn-primary" onClick={e => logout(e)}>Logout</button> */}
-      </Fragment>
-      
-    </div>
+        animate={true}
+        isAuthenticated={isAuthenticated}
+        setAuth={setAuth}
+        setRegister={setRegister}
+        isOpen={isOpen}
+        toggleIsOpen={toggleIsOpen}
+      />
+      <Nav
+        animate={true}
+        isAuthenticated={isAuthenticated}
+        setAuth={setAuth}
+        setRegister={setRegister}
+        toggleIsOpen={toggleIsOpen}
+      />
+      <div className="fullpage">
+        <Fragment>
+          <h1>Dashboard</h1>
+          <h1 className="text-center my-5">Hello {name}</h1>
+          <ButtonR
+            to="/dashboard/speller"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+            activeClassName="active"
+            primary={primary ? 1 : 0}
+            dark={dark ? 1 : 0}
+            dark2={dark2 ? 1 : 0}
+          >
+            Speller
+          </ButtonR>
+          <ButtonR
+            to="/dashboard/ssvep"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+            activeClassName="active"
+            primary={primary ? 1 : 0}
+            dark={dark ? 1 : 0}
+            dark2={dark2 ? 1 : 0}
+          >
+            SSVEP
+          </ButtonR>
+          <ButtonR
+            to="/dashboard/common"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+            activeClassName="active"
+            primary={primary ? 1 : 0}
+            dark={dark ? 1 : 0}
+            dark2={dark2 ? 1 : 0}
+          >
+            Common Instructions
+          </ButtonR>
+          <ButtonR
+            to="/alert"
+            className="blinker"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+            activeClassName="active"
+            primary={primary ? 1 : 0}
+            dark={dark ? 1 : 0}
+            dark2={dark2 ? 1 : 0}
+          >
+            Alert
+          </ButtonR>
+        </Fragment>
+      </div>
     </div>
   );
 };
