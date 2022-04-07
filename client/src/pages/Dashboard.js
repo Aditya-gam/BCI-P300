@@ -73,6 +73,8 @@ const Dashboard = ({
         <Fragment>
           <h1>Dashboard</h1>
           <h1 className="text-center my-5">Hello {name}</h1>
+          
+          <center>
           <ButtonR
             to="/dashboard/speller"
             className="blinker"
@@ -133,6 +135,7 @@ const Dashboard = ({
           >
             Alert
           </ButtonR>
+          </center>
         </Fragment>
       </div>
       <Footer />
