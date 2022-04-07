@@ -33,6 +33,7 @@ const HeroSection = () => {
             training tool to improve cognitive performance.
           </HeroP>
           <HeroBtnWrapper>
+            <div className="get-started">
             <ButtonS
               to="signup"
               onMouseEnter={onHover}
@@ -46,6 +47,7 @@ const HeroSection = () => {
             >
               Get started {hover ? <ArrowForward /> : <ArrowRight />}
             </ButtonS>
+            </div>
           </HeroBtnWrapper>
         </HeroContent>
       </HeroContainer>
