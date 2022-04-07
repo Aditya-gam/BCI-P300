@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import Nav from "../components/NavbarDashboard";
 import Sidebar from "../components/Sidebar";
+import Footer from "../components/Footer";
 // import ButtonSection from "../components/ButtonSection";
 // import {
 //   buttonObjOne,
@@ -74,6 +75,7 @@ const Dashboard = ({
           <h1 className="text-center my-5">Hello {name}</h1>
           <ButtonR
             to="/dashboard/speller"
+            className="blinker"
             smooth={true}
             duration={500}
             spy={true}
@@ -88,6 +90,7 @@ const Dashboard = ({
           </ButtonR>
           <ButtonR
             to="/dashboard/ssvep"
+            className="blinker"
             smooth={true}
             duration={500}
             spy={true}
@@ -102,6 +105,7 @@ const Dashboard = ({
           </ButtonR>
           <ButtonR
             to="/dashboard/common"
+            className="blinker"
             smooth={true}
             duration={500}
             spy={true}
@@ -131,6 +135,7 @@ const Dashboard = ({
           </ButtonR>
         </Fragment>
       </div>
+      <Footer />
     </div>
   );
 };

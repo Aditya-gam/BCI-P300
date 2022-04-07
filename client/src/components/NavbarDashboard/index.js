@@ -136,19 +136,19 @@ const Navbar = ({ isAuthenticated, setAuth, setRegister, toggleIsOpen }) => {
                 </MobileIcon>
                 <NavMenu className="head-menu">
                   <NavItem>
-                    <NavLinksR to="speller">Speller</NavLinksR>
+                    <NavLinksR to="/dashboard/speller">Speller</NavLinksR>
                   </NavItem>
                   <NavItem>
-                    <NavLinksR to="ssvep">SSVEP</NavLinksR>
+                    <NavLinksR to="/dashboard/ssvep">SSVEP</NavLinksR>
                   </NavItem>
                   <NavItem>
-                    <NavLinksR to="about">About</NavLinksR>
+                    <NavLinksR to="/about">About</NavLinksR>
                   </NavItem>
                   <NavItem>
-                    <NavLinksR to="commoninstructions">Common</NavLinksR>
+                    <NavLinksR to="/dashboard/common">Common</NavLinksR>
                   </NavItem>
                   <NavItem>
-                    <NavLinksR to="alert">Alert</NavLinksR>
+                    <NavLinksR to="/alert">Alert</NavLinksR>
                   </NavItem>
                 </NavMenu>
                 <NavBtn>
