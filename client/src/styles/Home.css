@@ -9,3 +9,9 @@
   text-align: justify;
   text-justify: inter-word;
 }
+
+.get-started :hover
+{
+  text-decoration: none;
+  color: white;
+}
