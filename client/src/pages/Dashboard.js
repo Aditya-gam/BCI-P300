@@ -69,72 +69,72 @@ const Dashboard = ({
         setRegister={setRegister}
         toggleIsOpen={toggleIsOpen}
       />
-      <div className="fullpage">
+      <div className="fullpage-dashboard">
         <Fragment>
           <h1>Dashboard</h1>
           <h1 className="text-center my-5">Hello {name}</h1>
-          
+
           <center>
-          <ButtonR
-            to="/dashboard/speller"
-            className="blinker"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-            activeClassName="active"
-            primary={primary ? 1 : 0}
-            dark={dark ? 1 : 0}
-            dark2={dark2 ? 1 : 0}
-          >
-            Speller
-          </ButtonR>
-          <ButtonR
-            to="/dashboard/ssvep"
-            className="blinker"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-            activeClassName="active"
-            primary={primary ? 1 : 0}
-            dark={dark ? 1 : 0}
-            dark2={dark2 ? 1 : 0}
-          >
-            SSVEP
-          </ButtonR>
-          <ButtonR
-            to="/dashboard/common"
-            className="blinker"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-            activeClassName="active"
-            primary={primary ? 1 : 0}
-            dark={dark ? 1 : 0}
-            dark2={dark2 ? 1 : 0}
-          >
-            Common Instructions
-          </ButtonR>
-          <ButtonR
-            to="/alert"
-            className="blinker"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-            activeClassName="active"
-            primary={primary ? 1 : 0}
-            dark={dark ? 1 : 0}
-            dark2={dark2 ? 1 : 0}
-          >
-            Alert
-          </ButtonR>
+            <ButtonR
+              to="/dashboard/speller"
+              className="blinker"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+              activeClassName="active"
+              primary={primary ? 1 : 0}
+              dark={dark ? 1 : 0}
+              dark2={dark2 ? 1 : 0}
+            >
+              Speller
+            </ButtonR>
+            <ButtonR
+              to="/dashboard/ssvep"
+              className="blinker"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+              activeClassName="active"
+              primary={primary ? 1 : 0}
+              dark={dark ? 1 : 0}
+              dark2={dark2 ? 1 : 0}
+            >
+              SSVEP
+            </ButtonR>
+            <ButtonR
+              to="/dashboard/common"
+              className="blinker"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+              activeClassName="active"
+              primary={primary ? 1 : 0}
+              dark={dark ? 1 : 0}
+              dark2={dark2 ? 1 : 0}
+            >
+              Common Instructions
+            </ButtonR>
+            <ButtonR
+              to="/alert"
+              className="blinker"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+              activeClassName="active"
+              primary={primary ? 1 : 0}
+              dark={dark ? 1 : 0}
+              dark2={dark2 ? 1 : 0}
+            >
+              Alert
+            </ButtonR>
           </center>
         </Fragment>
       </div>
