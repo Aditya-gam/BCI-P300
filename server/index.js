@@ -12,7 +12,8 @@ app.use(cors());
 // Register and Login routes
 app.use("/auth", require("./routes/jwtauth"));
 
-// Dashboard Route
+// Dashboard Route 
+//click here
 app.use("/dashboard", require("./routes/dashboard"));
 
 app.listen(5000, () => {

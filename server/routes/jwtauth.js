@@ -16,7 +16,7 @@ router.post("/register", validInfo, async (req, res) => {
     // 2. Check if user exist (if user exist then throw error)
 
     const user = await pool.query(
-      "SELECT * FROM users WHERE user_email = $1 AND user_access = $2",
+      "SELECT * FROM users WHERE user_email = $1 And user_access = $2",
       [email, access]
     );
 

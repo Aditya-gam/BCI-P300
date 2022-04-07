@@ -98,18 +98,18 @@ const Navbar = ({ isAuthenticated, setAuth, setRegister, toggleIsOpen }) => {
                     </NavLinksR>
                   </NavItem>
                   <NavItem>
-                      <NavLinksR
-                        to="signup"
-                        // smooth={true}
-                        // duration={500}
-                        spy={true}
-                        exact="true"
-                        offset={-80}
-                        activeClassName="active"
-                      >
-                        Sign Up
-                      </NavLinksR>
-                    </NavItem>
+                    <NavLinksR
+                      to="signup"
+                      // smooth={true}
+                      // duration={500}
+                      spy={true}
+                      exact="true"
+                      offset={-80}
+                      activeClassName="active"
+                    >
+                      Sign Up
+                    </NavLinksR>
+                  </NavItem>
                   <NavItem>
                     <NavLinksR to="alert">Alert</NavLinksR>
                   </NavItem>
@@ -128,7 +128,7 @@ const Navbar = ({ isAuthenticated, setAuth, setRegister, toggleIsOpen }) => {
           <IconContext.Provider value={{ color: "#fff" }}>
             <Nav scrollNav={scrollNav}>
               <NavbarContainer className="navbar">
-                <NavLogo className="head-nav" to="/">
+                <NavLogo className="head-nav" to="/dashboard">
                   BCI P300
                 </NavLogo>
                 <MobileIcon onClick={toggleIsOpen}>
@@ -136,19 +136,19 @@ const Navbar = ({ isAuthenticated, setAuth, setRegister, toggleIsOpen }) => {
                 </MobileIcon>
                 <NavMenu className="head-menu">
                   <NavItem>
-                    <NavLinksR to="speller">Speller</NavLinksR>
+                    <NavLinksR to="/dashboard/speller">Speller</NavLinksR>
                   </NavItem>
                   <NavItem>
-                    <NavLinksR to="ssvep">SSVEP</NavLinksR>
+                    <NavLinksR to="/dashboard/ssvep">SSVEP</NavLinksR>
                   </NavItem>
                   <NavItem>
-                    <NavLinksR to="about">About</NavLinksR>
+                    <NavLinksR to="/about">About</NavLinksR>
                   </NavItem>
                   <NavItem>
-                    <NavLinksR to="commoninstructions">Common</NavLinksR>
+                    <NavLinksR to="/dashboard/common">Common</NavLinksR>
                   </NavItem>
                   <NavItem>
-                    <NavLinksR to="alert">Alert</NavLinksR>
+                    <NavLinksR to="/alert">Alert</NavLinksR>
                   </NavItem>
                 </NavMenu>
                 <NavBtn>

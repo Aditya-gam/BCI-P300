@@ -1,13 +1,13 @@
 import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import Navbar from '../components/Nav';
+import Navbar from "../components/Nav";
 import "../styles/App.css";
 const Login = ({ setAuth }) => {
   const [inputs, setInputs] = useState({
     email: "",
     password: "",
-    access: ""
+    access: "",
   });
 
   const { email, password, access } = inputs;
@@ -46,49 +46,55 @@ const Login = ({ setAuth }) => {
 
   return (
     <>
-    <Navbar />
-    <div className="fullpage">
-      <Fragment>
-        <h1 className="text-center my-5">Login</h1>
+      <Navbar />
+      <div className="fullpage">
+        <Fragment>
+          <h1 className="text-center my-5">Login</h1>
 
-        <main className="form-signin">
-          <form onSubmit={onSubmitForm}>
-            <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
+          <main className="form-signin">
+            <form onSubmit={onSubmitForm}>
+              <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
 
-            <input
-              type="email"
-              name="email"
-              className="form-control my-3"
-              placeholder="Email Address"
-              value={email}
-              onChange={(e) => onChange(e)}
-            />
+              <input
+                type="email"
+                name="email"
+                className="form-control my-3"
+                placeholder="Email Address"
+                value={email}
+                onChange={(e) => onChange(e)}
+              />
 
-            <input
-              type="password"
-              name="password"
-              className="form-control my-3"
-              placeholder="Password"
-              value={password}
-              onChange={(e) => onChange(e)}
-            />
+              <input
+                type="password"
+                name="password"
+                className="form-control my-3"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => onChange(e)}
+              />
 
-              <select id="list" onChange={(e) => onChange(e)} className="form-control my-3" placeholder="Access Type">
+              <select
+                id="list"
+                onChange={(e) => onChange(e)}
+                name={"access"}
+                className="form-control my-3"
+                placeholder="Access Type"
+              >
                 <option value="patient">Patient</option>
                 <option value="doctor">Doctor</option>
                 <option value="admin">Admin</option>
               </select>
 
-            <button className="w-100 btn btn-lg btn-primary" type="submit">
-              Sign in
-            </button>
-          </form>
-          <p>
-            new here? <Link to="/register">Register</Link>
-          </p>
-        </main>
-      </Fragment>
-    </div>
+              <button className="w-100 btn btn-lg btn-primary" type="submit">
+                Sign in
+              </button>
+            </form>
+            <p>
+              new here? <Link to="/register">Register</Link>
+            </p>
+          </main>
+        </Fragment>
+      </div>
     </>
   );
 };
