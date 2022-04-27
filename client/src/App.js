@@ -1,5 +1,6 @@
 import React, { Fragment, useState, useEffect } from "react";
 import "./styles/App.css";
+import Alert from "./pages/Alert";
 
 import {
   BrowserRouter as Router,
@@ -134,6 +135,22 @@ function App() {
                   />
                 ) : (
                   <Navigate to="/login" />
+                )
+              }
+            />
+
+            <Route
+              path="/alert"
+              element={
+                (
+                  <Alert
+                    animate={true}
+                    isAuthenticated={isAuthenticated}
+                    setAuth={setAuth}
+                    setRegister={setRegister}
+                    isOpen={isOpen}
+                    toggleIsOpen={toggleIsOpen}
+                  />
                 )
               }
             />
