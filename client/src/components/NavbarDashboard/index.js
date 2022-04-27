@@ -4,6 +4,7 @@ import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
 import { toast } from "react-toastify";
+import Alert from "../../pages/Alert"; 
 import "../../styles/Nav.css";
 import {
   Nav,
@@ -111,7 +112,7 @@ const Navbar = ({ isAuthenticated, setAuth, setRegister, toggleIsOpen }) => {
                     </NavLinksR>
                   </NavItem>
                   <NavItem>
-                    <NavLinksR to="alert">Alert</NavLinksR>
+                    <NavLinksR to="/alert">Alert </NavLinksR>
                   </NavItem>
                 </NavMenu>
                 <NavBtn>
@@ -148,7 +149,7 @@ const Navbar = ({ isAuthenticated, setAuth, setRegister, toggleIsOpen }) => {
                     <NavLinksR to="/dashboard/common">Common</NavLinksR>
                   </NavItem>
                   <NavItem>
-                    <NavLinksR to="/alert">Alert</NavLinksR>
+                    <NavLinksR to="/alert">Alert </NavLinksR>
                   </NavItem>
                 </NavMenu>
                 <NavBtn>
