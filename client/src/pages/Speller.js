@@ -66,46 +66,117 @@ const Speller = ({
         <Fragment>
           <h1>Speller</h1>
           <center>
-          <div className="grid">
-            
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-              <div class="grid-item"></div>
-            
-          </div>
+            <div className="grid ">
+              <div class="grid-item blinker-sp">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item blinker-sp">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item blinker-sp">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item blinker-sp">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item blinker-sp">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item blinker-sp">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">A</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">B</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">B</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">B</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">B</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">B</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">B</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">B</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">B</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">B</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">B</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">B</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">B</div>
+              </div>
+              <div class="grid-item">
+                <div class="grid-inside">B</div>
+              </div>
+              
+            </div>
           </center>
         </Fragment>
       </div>
