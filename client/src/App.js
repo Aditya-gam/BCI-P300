@@ -18,6 +18,7 @@ import Register from "./pages/Register";
 // import Nav from "./components/Navbar";
 // import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
+import Speller from "./pages/Speller";
 
 toast.configure();
 
@@ -125,6 +126,23 @@ function App() {
               element={
                 isAuthenticated ? (
                   <Dashboard
+                    animate={true}
+                    isAuthenticated={isAuthenticated}
+                    setAuth={setAuth}
+                    setRegister={setRegister}
+                    isOpen={isOpen}
+                    toggleIsOpen={toggleIsOpen}
+                  />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
+            <Route
+              path="/dashboard/speller"
+              element={
+                isAuthenticated ? (
+                  <Speller
                     animate={true}
                     isAuthenticated={isAuthenticated}
                     setAuth={setAuth}
