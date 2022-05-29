@@ -1,23 +1,24 @@
-import React from 'react'
-import Sidebar from '../components/Sidebar'
-import Footer from '../components/Footer'
-import { Fragment } from 'react'
-import { Nav } from '../components/NavbarDashboard/NavbarElements'
-import { ButtonR } from '../components/ButtonElements'
+import React from "react";
+import Sidebar from "../components/Sidebar";
+import Footer from "../components/Footer";
+import { Fragment } from "react";
+import Nav from "../components/NavbarDashboard";
+import { ButtonR } from "../components/ButtonElements";
+import "../styles/Alert.css";
+import "../styles/Dashboard.css";
 
 const Alert = ({
-    isAuthenticated,
-    setAuth,
-    setRegister,
-    isOpen,
-    toggleIsOpen,
-    primary,
-    dark,
-    dark2,
-  }) => {
+  isAuthenticated,
+  setAuth,
+  setRegister,
+  isOpen,
+  toggleIsOpen,
+  primary,
+  dark,
+  dark2,
+}) => {
   return (
-    <div>
-      <div className="alert">
+    <div className="dashboard">
       <Sidebar
         animate={true}
         isAuthenticated={isAuthenticated}
@@ -103,9 +104,7 @@ const Alert = ({
       </div>
       <Footer />
     </div>
+  );
+};
 
-    </div>
-  )
-}
-
-export default Alert
+export default Alert;
