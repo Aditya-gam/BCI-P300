@@ -1,6 +1,5 @@
 import React, { Fragment, useState, useEffect } from "react";
 import "./styles/App.css";
-import Alert from "./pages/Alert";
 
 import {
   BrowserRouter as Router,
@@ -19,6 +18,9 @@ import Register from "./pages/Register";
 // import Nav from "./components/Navbar";
 // import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
+import Speller from "./pages/Speller";
+import Alert from "./pages/Alert";
+import Contact from "./pages/Contact";
 
 toast.configure();
 
@@ -138,11 +140,27 @@ function App() {
                 )
               }
             />
-
+            <Route
+              path="/dashboard/speller"
+              element={
+                isAuthenticated ? (
+                  <Speller
+                    animate={true}
+                    isAuthenticated={isAuthenticated}
+                    setAuth={setAuth}
+                    setRegister={setRegister}
+                    isOpen={isOpen}
+                    toggleIsOpen={toggleIsOpen}
+                  />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
             <Route
               path="/alert"
               element={
-                (
+                isAuthenticated ? (
                   <Alert
                     animate={true}
                     isAuthenticated={isAuthenticated}
@@ -151,6 +169,25 @@ function App() {
                     isOpen={isOpen}
                     toggleIsOpen={toggleIsOpen}
                   />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
+             <Route
+              path="/dashboard/contact"
+              element={
+                isAuthenticated ? (
+                  <Contact
+                    animate={true}
+                    isAuthenticated={isAuthenticated}
+                    setAuth={setAuth}
+                    setRegister={setRegister}
+                    isOpen={isOpen}
+                    toggleIsOpen={toggleIsOpen}
+                  />
+                ) : (
+                  <Navigate to="/login" />
                 )
               }
             />
