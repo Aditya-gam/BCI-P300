@@ -25,6 +25,30 @@ body { font-family: sans-serif; }
   border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
+
+  /* text-align: center; */
+  /* justify-content: center;
+      justify-items: center; */
+  /* align-self: center; */
+  /* align-content: center; */
+  padding: 40px;
+  margin: 2px;
+  
+}
+
+.grid-inside{
+    /* text-align: center; */
+    color: black;
+    font-size: larger;
+}
+
+.blinker-sp { 
+  width: 160px;
+  height: 120px;
+  transition: all 1 ease-in-out;
+  animation: animate 2s linear 1;
+  animation-delay: 0s;
+
 }
 
 .grid-inside{
@@ -39,6 +63,7 @@ body { font-family: sans-serif; }
   transition: all 1 ease-in-out;
   animation: animate 2s linear infinite;
 
+
 @keyframes animate{
   0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92%{
     background-color: #01bf71;
@@ -48,4 +73,41 @@ body { font-family: sans-serif; }
     background-color: green;
   }
 }
+
+}
+
+.grid-blink1 {
+  width: 160px;
+  height: 120px;
+  animation: new 1s ease-out 2;
+  animation-delay: 2s;
+
+}
+
+@keyframes new{
+  0%, 40%, 80%{
+    background-color: green;
+  }
+
+  20%, 60%, 100%{
+    background-color: #01bf71;
+  }
+}
+
+.grid-blink2{
+  width: 160px;
+  height: 120px;
+  animation: blinker 1s ease-in 2;
+  animation-delay: 4s;
+}
+
+@keyframes blinker{
+  20%, 40%, 60%, 80.1%{
+    background-color: green;
+  }
+
+  10%, 50%, 90%, 100%{
+    background-color: #01bf71;
+  }
+
 }

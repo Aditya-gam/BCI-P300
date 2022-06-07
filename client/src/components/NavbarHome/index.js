@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Alert from "../../pages/Alert";
 // import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";

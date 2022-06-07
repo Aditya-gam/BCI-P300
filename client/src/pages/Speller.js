@@ -66,6 +66,116 @@ const Speller = ({
         <Fragment>
           <h1>Speller</h1>
           <center>
+
+            <div className="grid">
+              <div class="grid-item grid-inside grid-blink1">
+                A
+              </div>
+              <div class="grid-item grid-inside blinker-sp">
+                B
+              </div>
+              <div class="grid-item grid-inside grid-blink2">
+                C
+              </div>
+              <div class="grid-item grid-inside grid-blink1">
+                D
+              </div>
+              <div class="grid-item grid-inside blinker-sp">
+                E
+              </div>
+              <div class="grid-item grid-inside grid-blink2">
+                F
+              </div>
+              <div class="grid-item grid-inside grid-blink2">
+                G
+              </div>
+              <div class="grid-item grid-inside grid-blink1">
+                H
+              </div>
+              <div class="grid-item grid-inside blinker-sp">
+                I
+              </div>
+              <div class="grid-item grid-inside grid-blink2">
+                J
+              </div>
+              <div class="grid-item grid-inside blinker-sp">
+                K
+              </div>
+              <div class="grid-item grid-inside grid-blink1">
+                L
+              </div>
+              <div class="grid-item grid-inside grid-blink1">
+                M
+              </div>
+              <div class="grid-item grid-inside grid-blink2">
+                N
+              </div>
+              <div class="grid-item grid-inside grid-blink1">
+                O
+              </div>
+              <div class="grid-item grid-inside blinker-sp">
+                P
+              </div>
+              <div class="grid-item grid-inside blinker-sp">
+                Q
+              </div>
+              <div class="grid-item grid-inside blinker-sp">
+                R
+              </div>
+              <div class="grid-item grid-inside grid-blink2">
+                S
+              </div>
+              <div class="grid-item grid-inside blinker-sp">
+                T
+              </div>
+              <div class="grid-item grid-inside blinker-sp">
+                U
+              </div>
+              <div class="grid-item grid-inside grid-blink2">
+                V
+              </div>
+              <div class="grid-item grid-inside grid-blink1">
+                W
+              </div>
+              <div class="grid-item grid-inside grid-blink2">
+                X
+              </div>
+              <div class="grid-item grid-inside grid-blink1">
+                Y
+              </div>
+              <div class="grid-item grid-inside grid-blink2">
+                Z
+              </div>
+              <div class="grid-item grid-inside grid-blink1">
+                1
+              </div>
+              <div class="grid-item grid-inside blinker-sp">
+                2
+              </div>
+              <div class="grid-item grid-inside grid-blink2">
+                3
+              </div>
+              <div class="grid-item grid-inside grid-blink1">
+                4
+              </div>
+              <div class="grid-item grid-inside grid-blink2">
+                5
+              </div>
+              <div class="grid-item grid-inside grid-blink1">
+                6
+              </div>
+              <div class="grid-item grid-inside blinker-sp">
+                7
+              </div>
+              <div class="grid-item grid-inside grid-blink2">
+                8
+              </div>
+              <div class="grid-item grid-inside grid-blink1">
+                9
+              </div>
+              <div class="grid-item grid-inside blinker-sp">
+                0
+
             <div className="grid ">
               <div class="grid-item blinker-sp">
                 <div class="grid-inside">A</div>
