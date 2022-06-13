@@ -65,7 +65,6 @@ const Contact = ({
       <div className="fullpage-dashboard">
         <Fragment>
           <h1>Contact</h1>
-          
         </Fragment>
       </div>
       <Footer />
