@@ -23,6 +23,10 @@ import Alert from "./pages/Alert";
 import Contact from "./pages/Contact";
 import Ssvep from "./pages/Ssvep";
 import Sos from "./pages/Sos";
+import Water from "./pages/Water";
+import Fan from "./pages/Fan";
+import Food from "./pages/Food";
+import Restroom from "./pages/Restroom";
 
 toast.configure();
 
@@ -200,6 +204,78 @@ function App() {
               element={
                 isAuthenticated ? (
                   <Contact
+                    animate={true}
+                    isAuthenticated={isAuthenticated}
+                    setAuth={setAuth}
+                    setRegister={setRegister}
+                    isOpen={isOpen}
+                    toggleIsOpen={toggleIsOpen}
+                  />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
+            
+             <Route
+              path="dashboard/water"
+              element={
+                isAuthenticated ? (
+                  <Water
+                    animate={true}
+                    isAuthenticated={isAuthenticated}
+                    setAuth={setAuth}
+                    setRegister={setRegister}
+                    isOpen={isOpen}
+                    toggleIsOpen={toggleIsOpen}
+                  />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
+            
+             <Route
+              path="dashboard/fan"
+              element={
+                isAuthenticated ? (
+                  <Fan
+                    animate={true}
+                    isAuthenticated={isAuthenticated}
+                    setAuth={setAuth}
+                    setRegister={setRegister}
+                    isOpen={isOpen}
+                    toggleIsOpen={toggleIsOpen}
+                  />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
+            
+             <Route
+              path="dashboard/food"
+              element={
+                isAuthenticated ? (
+                  <Food
+                    animate={true}
+                    isAuthenticated={isAuthenticated}
+                    setAuth={setAuth}
+                    setRegister={setRegister}
+                    isOpen={isOpen}
+                    toggleIsOpen={toggleIsOpen}
+                  />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
+            
+             <Route
+              path="dashboard/restroom"
+              element={
+                isAuthenticated ? (
+                  <Restroom
                     animate={true}
                     isAuthenticated={isAuthenticated}
                     setAuth={setAuth}
