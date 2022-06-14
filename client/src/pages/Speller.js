@@ -2,7 +2,7 @@ import React, { Fragment, useState, useEffect } from "react";
 import Nav from "../components/NavbarDashboard";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
-// import { ButtonR } from "../components/ButtonElements";
+import { ButtonR } from "../components/ButtonElements";
 import "../styles/App.css";
 import "../styles/Speller.css";
 import "../styles/Dashboard.css";
@@ -66,6 +66,23 @@ const Speller = ({
         <Fragment>
           <h1>Speller</h1>
           <center>
+            <ButtonR
+              to="/dashboard/speller"
+              className="blinker"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+              activeClassName="active"
+              primary={primary ? 1 : 0}
+              dark={dark ? 1 : 0}
+              dark2={dark2 ? 1 : 0}
+              // onClick=
+            >
+              Start
+            </ButtonR>
+
             <div className="grid">
               <div class="grid-item grid-inside grid-blink1">A</div>
               <div class="grid-item grid-inside blinker-sp">B</div>
@@ -104,7 +121,6 @@ const Speller = ({
               <div class="grid-item grid-inside grid-blink1">9</div>
               <div class="grid-item grid-inside blinker-sp">0</div>
             </div>
-        </div>
           </center>
         </Fragment>
       </div>

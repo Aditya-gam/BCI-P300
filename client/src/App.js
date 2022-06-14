@@ -21,6 +21,8 @@ import Home from "./pages/Home";
 import Speller from "./pages/Speller";
 import Alert from "./pages/Alert";
 import Contact from "./pages/Contact";
+import Ssvep from "./pages/Ssvep";
+import Sos from "./pages/Sos";
 
 toast.configure();
 
@@ -174,11 +176,48 @@ function App() {
                 )
               }
             />
+
+            <Route
+              path="dashboard/alert"
+              element={
+                isAuthenticated ? (
+                  <Sos
+                    animate={true}
+                    isAuthenticated={isAuthenticated}
+                    setAuth={setAuth}
+                    setRegister={setRegister}
+                    isOpen={isOpen}
+                    toggleIsOpen={toggleIsOpen}
+                  />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
+            
              <Route
-              path="/dashboard/contact"
+              path="dashboard/alert/contact"
               element={
                 isAuthenticated ? (
                   <Contact
+                    animate={true}
+                    isAuthenticated={isAuthenticated}
+                    setAuth={setAuth}
+                    setRegister={setRegister}
+                    isOpen={isOpen}
+                    toggleIsOpen={toggleIsOpen}
+                  />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
+
+            <Route
+              path="/dashboard/ssvep"
+              element={
+                isAuthenticated ? (
+                  <Ssvep
                     animate={true}
                     isAuthenticated={isAuthenticated}
                     setAuth={setAuth}

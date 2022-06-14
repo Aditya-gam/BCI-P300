@@ -40,7 +40,7 @@ const Ssvep = ({
 
           <center>
             <ButtonR
-              to="/dashboard/ssvep"
+              to="/dashboard/water"
               className="blinker"
               smooth={true}
               duration={500}
@@ -55,7 +55,7 @@ const Ssvep = ({
               Water
             </ButtonR>
             <ButtonR
-              to="/dashboard/contact"
+              to="/dashboard/fan"
               className="blinker"
               smooth={true}
               duration={500}
@@ -70,7 +70,7 @@ const Ssvep = ({
               Fan
             </ButtonR>
             <ButtonR
-              to="/dashboard/common"
+              to="/dashboard/food"
               className="blinker"
               smooth={true}
               duration={500}
@@ -85,7 +85,7 @@ const Ssvep = ({
               Food
             </ButtonR>
             <ButtonR
-              to="/ssvep"
+              to="/dashboard/restroom"
               className="blinker"
               smooth={true}
               duration={500}
