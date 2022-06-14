@@ -121,7 +121,6 @@ const Speller = ({
               <div class="grid-item grid-inside grid-blink1">9</div>
               <div class="grid-item grid-inside blinker-sp">0</div>
             </div>
-        </div>
           </center>
         </Fragment>
       </div>
