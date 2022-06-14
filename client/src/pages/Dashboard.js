@@ -71,7 +71,7 @@ const Dashboard = ({
       />
       <div className="fullpage-dashboard">
         <Fragment>
-          <h1>Dashboard</h1>
+          <h1 className="heading-title">Dashboard</h1>
           <h1 className="text-center my-5">Hello {name}</h1>
 
           <center>
