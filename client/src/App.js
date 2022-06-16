@@ -28,6 +28,7 @@ import Fan from "./pages/Fan";
 import Food from "./pages/Food";
 import Restroom from "./pages/Restroom";
 import SpellerSettings from "./pages/SpellerSettings";
+import Common from "./pages/Common";
 
 toast.configure();
 
@@ -295,6 +296,24 @@ function App() {
               element={
                 isAuthenticated ? (
                   <SpellerSettings
+                    animate={true}
+                    isAuthenticated={isAuthenticated}
+                    setAuth={setAuth}
+                    setRegister={setRegister}
+                    isOpen={isOpen}
+                    toggleIsOpen={toggleIsOpen}
+                  />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
+            
+             <Route
+              path="dashboard/common"
+              element={
+                isAuthenticated ? (
+                  <Common
                     animate={true}
                     isAuthenticated={isAuthenticated}
                     setAuth={setAuth}
