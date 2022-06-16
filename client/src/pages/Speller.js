@@ -67,7 +67,7 @@ const Speller = ({
           <h1>Speller</h1>
           <center>
             <ButtonR
-              to="/dashboard/speller"
+              to="/dashboard/speller-settings"
               className="blinker"
               smooth={true}
               duration={500}
