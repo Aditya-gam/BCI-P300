@@ -68,7 +68,7 @@ const Speller = ({
           <center>
             <ButtonR
               to="/dashboard/speller-settings"
-              className="blinker"
+              className="start-button-speller"
               smooth={true}
               duration={500}
               spy={true}
@@ -80,7 +80,7 @@ const Speller = ({
               dark2={dark2 ? 1 : 0}
               // onClick=
             >
-              Start
+              Speller Settings
             </ButtonR>
 
             <div className="grid">
