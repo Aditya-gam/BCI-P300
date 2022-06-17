@@ -37,124 +37,121 @@ const Footer = () => {
           <div className="FooterLinksContainer">
             <div className="FooterLinksWrapper">
               <div className="FooterLinkItems">
-                <div className="FooterLinkTitle">About Us</div>
-                <div className="FooterLink" to="/login">
-                  How it works
+                <h1 className="FooterLinkTitle">About Us</h1>
+                <div>
+                <a href="/login" className="FooterLink">How it works</a>
                 </div>
-                <div className="FooterLink" to="/login">
-                  Testimonials
+                <div>
+                <a href="/login" className="FooterLink">Testimonials</a>
                 </div>
-                <div className="FooterLink" to="/login">
-                  Careers
+                <div>
+                <a href="/login" className="FooterLink">Careers</a>
                 </div>
-                <div className="FooterLink" to="/login">
-                  Investors
-                </div>
-                <div className="FooterLink" to="/login">
-                  Terms of Service
+                <div>
+                <a href="/login" className="FooterLink">Terms of Service</a>
                 </div>
               </div>
               <div classname="FooterLinkItems">
-                <div className="FooterLinkTitle">Contact Us</div>
-                <div className="FooterLink" to="/login">
-                  Contact
+                <h1 className="FooterLinkTitle">Contact Us</h1>
+                <div>
+                <a href="/login" className="FooterLink">Contact</a>
                 </div>
-                <div className="FooterLink" to="/login">
-                  Support
+                <div>
+                <a href="/login" className="FooterLink">Support</a>
                 </div>
-                <div className="FooterLink" to="/login">
-                  Destinations
+                <div>
+                <a href="/login" className="FooterLink">Destinations</a>
                 </div>
-                <div className="FooterLink" to="/login">
-                  Sponsorships
+                <div>
+                <a href="/login" className="FooterLink">Sponsorships</a>
                 </div>
               </div>
             </div>
             <div className="FooterLinksWrapper">
               <div className="FooterLinkItems">
-                <div className="FooterLinkTitle">Videos</div>
-                <div className="FooterLink" to="/login">
-                  Submit Video
+                <h1 className="FooterLinkTitle">Videos</h1>
+                <div>
+                <a href="/login" className="FooterLink">Submit Video</a>
                 </div>
-                <div className="FooterLink" to="/login">
-                  Ambassadors
+                <div>
+                <a href="/login" className="FooterLink">Ambassadors</a>
                 </div>
-                <div className="FooterLink" to="/login">
-                  Agency
+                <div>
+                <a href="/login" className="FooterLink">Agency</a>
                 </div>
-                <div className="FooterLink" to="/login">
-                  Influencer
+                <div>
+                <a href="/login" className="FooterLink">Influencer</a>
                 </div>
               </div>
               <div className="FooterLinkItems">
-                <div className="FooterLinkTitle">Social Media</div>
-                <div className="FooterLink" to="/login">
-                  Instagram
+                <h1 className="FooterLinkTitle">Social Media</h1>
+                <div>
+                <a href="/login" className="FooterLink">Instagram</a>
                 </div>
-                <div className="FooterLink" to="/login">
-                  Facebook
+                <div>
+                <a href="/login" className="FooterLink">Facebook</a>
                 </div>
-                <div className="FooterLink" to="/login">
-                  Youtube
+                <div>
+                <a href="/login" className="FooterLink">Youtube</a>
                 </div>
-                <div className="FooterLink" to="/login">
-                  Twitter
+                <div>
+                <a href="/login" className="FooterLink">Twitter</a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="SocialMedia">
+          <section className="SocialMedia">
             <div className="SocialMediaWrap">
               <div className="SocialLogo" to="/" onClick={toggleHome}>
                 BCI
               </div>
-              <div className="WebsiteRights">
+              <small className="WebsiteRights">
                 BCI © {new Date().getFullYear()} All rights reserved.
-              </div>
+              </small>
               <div className="SocialIcons">
-                <div
+                <a
                   className="SocialIconLink"
                   href="/"
                   target="_blank"
                   aria-label="Facebook"
                 >
                   <FaFacebook />
-                </div>
-                <div
+                </a>
+                <a
                   className="SocialIconLink"
                   href="/"
                   target="_blank"
                   aria-label="Instagram"
                 >
                   <FaInstagram />
-                </div>
-                <div
+                </a>
+                <a
                   className="SocialIconLink"
                   href="/"
                   target="_blank"
                   aria-label="Youtube"
                 >
                   <FaYoutube />
-                </div>
-                <div
+                </a>
+                <a
                   className="SocialIconLink"
                   href="/"
                   target="_blank"
                   aria-label="Twitter"
                 >
                   <FaTwitter />
-                </div>
-                <div
+                </a>
+                <a
                   className="SocialIconLink"
                   href="/"
                   target="_blank"
                   aria-label="Linkedin"
                 >
                   <FaLinkedin />
-                </div>
+                </a>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
