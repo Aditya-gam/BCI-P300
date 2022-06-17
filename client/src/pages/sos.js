@@ -2,10 +2,12 @@ import React, { Fragment, useState, useEffect } from "react";
 import Nav from "../components/NavbarDashboard";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
+import useGeoLocation from "../hooks/useGeoLocation";
 // import { ButtonR } from "../components/ButtonElements";
 import "../styles/App.css";
 import "../styles/Speller.css";
 import "../styles/Dashboard.css";
+import "../styles/Sos.css";
 
 const Sos = ({
   isAuthenticated,
@@ -47,7 +49,7 @@ const Sos = ({
   //   }, []);
 
   const [details, setDetails] = useState(null);
-
+  const location = useGeoLocation();
   const getUserGeolocationDetails = () => {
     fetch(
       "https://geolocation-db.com/json/0f761a30-fe14-11e9-b59f-e53803842572"
@@ -76,7 +78,7 @@ const Sos = ({
       <div className="fullpage-dashboard">
         <Fragment>
           <h1>SOS!!!</h1>
-          <div className="row">
+          {/* <div className="row">
             <div className="col text-center">
               <h2>Find my IP and Location</h2>
               <p className="mt-3">
@@ -101,6 +103,19 @@ const Sos = ({
                   </div>
                 </div>
               </p>
+            </div>
+          </div> */}
+          <div className="row d-flex justify-content-center mt-3 mb-5 pb-5">
+            <div className="col-6">
+              <div class="card">
+                <div class="card-header text-left font-weight-bold d-flex">
+                  <div className="inline-block mr-auto pt-1 location-font">
+                    {location.loaded
+                      ? JSON.stringify(location)
+                      : "Location data not available yet."}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </Fragment>

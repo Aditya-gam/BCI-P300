@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 import { Fragment } from "react";
 import Nav from "../components/NavbarDashboard";
 import { ButtonR } from "../components/ButtonElements";
@@ -18,8 +18,7 @@ const SpellerSettings = ({
   dark,
   dark2,
 }) => {
-  
-    return (
+  return (
     <div className="dashboard">
       <Sidebar
         animate={true}
@@ -64,7 +63,9 @@ const SpellerSettings = ({
             </form>
 
             <form>
-              <h1 className="h3 mb-3 fw-normal">Choose the Value of Simulation Frequency</h1>
+              <h1 className="h3 mb-3 fw-normal">
+                Choose the Value of Simulation Frequency
+              </h1>
 
               <select
                 id="list"
@@ -84,7 +85,9 @@ const SpellerSettings = ({
             </form>
 
             <form>
-              <h1 className="h3 mb-3 fw-normal">Choose the color of stimulus, please!</h1>
+              <h1 className="h3 mb-3 fw-normal">
+                Choose the color of stimulus, please!
+              </h1>
 
               <select
                 id="list"
@@ -97,23 +100,22 @@ const SpellerSettings = ({
                 <option value="blue">Blue</option>
                 <option value="red">Red</option>
               </select>
-            
-              <ButtonR
-              to="/dashboard/speller-settings"
-              className="start-button-speller"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-              activeClassName="active"
-              primary={primary ? 1 : 0}
-              dark={dark ? 1 : 0}
-              dark2={dark2 ? 1 : 0}
-            >
-              Start
-            </ButtonR>
 
+              <ButtonR
+                to="/dashboard/speller"
+                className="blinker"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+                activeClassName="active"
+                primary={primary ? 1 : 0}
+                dark={dark ? 1 : 0}
+                dark2={dark2 ? 1 : 0}
+              >
+                Start
+              </ButtonR>
             </form>
           </main>
         </Fragment>

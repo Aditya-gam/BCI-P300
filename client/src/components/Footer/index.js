@@ -53,6 +53,7 @@ const Footer = () => {
               </div>
               <div classname="FooterLinkItems">
                 <h1 className="FooterLinkTitle">Contact Us</h1>
+
                 <div>
                 <a href="/login" className="FooterLink">Contact</a>
                 </div>
@@ -70,8 +71,10 @@ const Footer = () => {
             <div className="FooterLinksWrapper">
               <div className="FooterLinkItems">
                 <h1 className="FooterLinkTitle">Videos</h1>
+
                 <div>
                 <a href="/login" className="FooterLink">Submit Video</a>
+
                 </div>
                 <div>
                 <a href="/login" className="FooterLink">Ambassadors</a>
