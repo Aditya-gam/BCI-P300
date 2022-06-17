@@ -37,7 +37,7 @@ const Footer = () => {
           <div className="FooterLinksContainer">
             <div className="FooterLinksWrapper">
               <div className="FooterLinkItems">
-                <div className="FooterLinkTitle">About Us</div>
+                <h1 className="FooterLinkTitle">About Us</h1>
                 <div className="FooterLink" to="/login">
                   How it works
                 </div>
@@ -55,7 +55,7 @@ const Footer = () => {
                 </div>
               </div>
               <div classname="FooterLinkItems">
-                <div className="FooterLinkTitle">Contact Us</div>
+                <h1 className="FooterLinkTitle">Contact Us</h1>
                 <div className="FooterLink" to="/login">
                   Contact
                 </div>
@@ -72,7 +72,7 @@ const Footer = () => {
             </div>
             <div className="FooterLinksWrapper">
               <div className="FooterLinkItems">
-                <div className="FooterLinkTitle">Videos</div>
+                <h1 className="FooterLinkTitle">Videos</h1>
                 <div className="FooterLink" to="/login">
                   Submit Video
                 </div>
@@ -87,7 +87,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="FooterLinkItems">
-                <div className="FooterLinkTitle">Social Media</div>
+                <h1 className="FooterLinkTitle">Social Media</h1>
                 <div className="FooterLink" to="/login">
                   Instagram
                 </div>
@@ -103,58 +103,58 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="SocialMedia">
+          <section className="SocialMedia">
             <div className="SocialMediaWrap">
               <div className="SocialLogo" to="/" onClick={toggleHome}>
                 BCI
               </div>
-              <div className="WebsiteRights">
+              <small className="WebsiteRights">
                 BCI © {new Date().getFullYear()} All rights reserved.
-              </div>
+              </small>
               <div className="SocialIcons">
-                <div
+                <a
                   className="SocialIconLink"
                   href="/"
                   target="_blank"
                   aria-label="Facebook"
                 >
                   <FaFacebook />
-                </div>
-                <div
+                </a>
+                <a
                   className="SocialIconLink"
                   href="/"
                   target="_blank"
                   aria-label="Instagram"
                 >
                   <FaInstagram />
-                </div>
-                <div
+                </a>
+                <a
                   className="SocialIconLink"
                   href="/"
                   target="_blank"
                   aria-label="Youtube"
                 >
                   <FaYoutube />
-                </div>
-                <div
+                </a>
+                <a
                   className="SocialIconLink"
                   href="/"
                   target="_blank"
                   aria-label="Twitter"
                 >
                   <FaTwitter />
-                </div>
-                <div
+                </a>
+                <a
                   className="SocialIconLink"
                   href="/"
                   target="_blank"
                   aria-label="Linkedin"
                 >
                   <FaLinkedin />
-                </div>
+                </a>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
