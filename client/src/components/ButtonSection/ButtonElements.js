@@ -10,17 +10,17 @@ export const ButtonContainer = styled.div`
   }
 `;
 
-export const ButtonWrapper = styled.div`
-  display: grid;
-  z-index: 1;
-  height: 860px;
-  width: 100%;
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 24px;
-  justify-content: center;
-`;
+// export const ButtonWrapper = styled.div`
+//   display: grid;
+//   z-index: 1;
+//   height: 860px;
+//   width: 100%;
+//   max-width: 1100px;
+//   margin-right: auto;
+//   margin-left: auto;
+//   padding: 0 24px;
+//   justify-content: center;
+// `;
 
 export const ButtonElement = styled(LinkR)`
   border-radius: 50px;
