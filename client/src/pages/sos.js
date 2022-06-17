@@ -77,7 +77,7 @@ const Sos = ({
       />
       <div className="fullpage-dashboard">
         <Fragment>
-          <h1>SOS!!!</h1>
+          <h1>SOS</h1>
           {/* <div className="row">
             <div className="col text-center">
               <h2>Find my IP and Location</h2>
