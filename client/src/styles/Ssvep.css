@@ -1,10 +1,8 @@
 /* SSVEP */
 
-.fullpage-dashboard {
-  margin-top: 120px;
-  height: 100%;
-  padding-bottom: 30px;
-}
+/* .fullpage-dashboard {
+  
+} */
 
 .dashboard {
   background: #000;
@@ -19,13 +17,14 @@
 }
 
 .page-bg {
-  height: 100%;
-  width: 100%;
+  margin-top: 120px;
+  height: 400px;
+  padding-bottom: 30px;
+  background-color: #1A374D;
 }
 
 .text-h1 {
   text-align: center;
-  height: 100%;
-  width: 100%;
-  padding-top: 30px;
+  padding: 50px;
+  padding-top: 175px;
 }

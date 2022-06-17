@@ -34,8 +34,8 @@ const Water = ({
         setRegister={setRegister}
         toggleIsOpen={toggleIsOpen}
       />
-      <div className="fullpage-dashboard">
-        <Fragment className="page-bg">
+      <div className="page-bg">
+        <Fragment >
           <h1 className="text-h1">
             Please wait our correspondent will soon bring water.
           </h1>
