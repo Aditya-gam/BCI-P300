@@ -1,19 +1,17 @@
 import React from "react";
-import {
-  ButtonContainer,
-  ButtonWrapper,
-  ButtonElement,
-} from "./ButtonElements";
+import { ButtonContainer, ButtonElement } from "./ButtonElements";
+
+import "../../styles/ButtonElements.css";
 
 const ButtonSection = ({ buttonLabel }) => {
   return (
-    <>
+    <div>
       <ButtonContainer>
-        <ButtonWrapper>
+        <div className="ButtonWrapper">
           <ButtonElement>{buttonLabel}</ButtonElement>
-        </ButtonWrapper>
+        </div>
       </ButtonContainer>
-    </>
+    </div>
   );
 };
 
