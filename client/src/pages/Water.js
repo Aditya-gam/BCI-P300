@@ -35,71 +35,10 @@ const Water = ({
         toggleIsOpen={toggleIsOpen}
       />
       <div className="fullpage-dashboard">
-        <Fragment>
-          <h1>Water</h1>
-
-          {/* <center>
-            <ButtonR
-              to="/dashboard/water"
-              className="blinker"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-              activeClassName="active"
-              primary={primary ? 1 : 0}
-              dark={dark ? 1 : 0}
-              dark2={dark2 ? 1 : 0}
-            >
-              Water
-            </ButtonR>
-            <ButtonR
-              to="/dashboard/fan"
-              className="blinker"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-              activeClassName="active"
-              primary={primary ? 1 : 0}
-              dark={dark ? 1 : 0}
-              dark2={dark2 ? 1 : 0}
-            >
-              Fan
-            </ButtonR>
-            <ButtonR
-              to="/dashboard/food"
-              className="blinker"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-              activeClassName="active"
-              primary={primary ? 1 : 0}
-              dark={dark ? 1 : 0}
-              dark2={dark2 ? 1 : 0}
-            >
-              Food
-            </ButtonR>
-            <ButtonR
-              to="/dashboard/restroom"
-              className="blinker"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-              activeClassName="active"
-              primary={primary ? 1 : 0}
-              dark={dark ? 1 : 0}
-              dark2={dark2 ? 1 : 0}
-            >
-              Restroom
-            </ButtonR>
-          </center> */}
+        <Fragment className="page-bg">
+          <h1 className="text-h1">
+            Please wait our correspondent will soon bring water.
+          </h1>
         </Fragment>
       </div>
       <Footer />
