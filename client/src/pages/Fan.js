@@ -34,8 +34,8 @@ const Fan = ({
         setRegister={setRegister}
         toggleIsOpen={toggleIsOpen}
       />
-      <div className="fullpage-dashboard">
-        <Fragment className="page-bg">
+      <div className="page-bg">
+        <Fragment>
           <h1 className="text-h1">
             Please wait while our correspondents attend to your request!!!
           </h1>
