@@ -50,11 +50,11 @@ const SpellerSettings = ({
                 className="form-control my-3"
                 placeholder="Access Type"
               >
-                <option value="trial1">1</option>
-                <option value="trial2">2</option>
-                <option value="trial3">3</option>
-                <option value="trial4">4</option>
-                <option value="trial5">5</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
               </select>
 
               {/* <button className="w-100 btn btn-lg btn-primary" type="submit">
@@ -74,9 +74,9 @@ const SpellerSettings = ({
                 className="form-control my-3"
                 placeholder="Access Type"
               >
-                <option value="freq-1">1</option>
-                <option value="freq-2">2</option>
-                <option value="freq-3">3</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
               </select>
 
               {/* <button className="w-100 btn btn-lg btn-primary" type="submit">
@@ -96,9 +96,9 @@ const SpellerSettings = ({
                 className="form-control my-3"
                 placeholder="Access Type"
               >
-                <option value="patient">Green</option>
-                <option value="doctor">Blue</option>
-                <option value="admin">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
               </select>
 
               <ButtonR
