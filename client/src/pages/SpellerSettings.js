@@ -103,7 +103,7 @@ const SpellerSettings = ({
 
               <ButtonR
                 to="/dashboard/speller"
-                className="blinker"
+                className="start-button-speller"
                 smooth={true}
                 duration={500}
                 spy={true}
