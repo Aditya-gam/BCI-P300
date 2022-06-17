@@ -48,15 +48,15 @@ const Sos = ({
   //     getName();
   //   }, []);
 
-  const [details, setDetails] = useState(null);
+  // const [details, setDetails] = useState(null);
   const location = useGeoLocation();
-  const getUserGeolocationDetails = () => {
-    fetch(
-      "https://geolocation-db.com/json/0f761a30-fe14-11e9-b59f-e53803842572"
-    )
-      .then((response) => response.json())
-      .then((data) => setDetails(data));
-  };
+  // const getUserGeolocationDetails = () => {
+  //   fetch(
+  //     "https://geolocation-db.com/json/0f761a30-fe14-11e9-b59f-e53803842572"
+  //   )
+  //     .then((response) => response.json())
+  //     .then((data) => setDetails(data));
+  // };
 
   return (
     <div className="dashboard">

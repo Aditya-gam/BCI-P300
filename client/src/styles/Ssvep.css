@@ -1,19 +1,31 @@
 /* SSVEP */
 
 .fullpage-dashboard {
-    margin-top: 120px;
-    height: 100%;
-    padding-bottom: 30px;
-  }
-  
-  .dashboard {
-    background: #000;
-    color: #fff;
-  }
-  
-  .alert {
-    background-color: #000;
-    color: white;
-    margin: 0%;
-    padding: 0%;
-  }
+  margin-top: 120px;
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.dashboard {
+  background: #000;
+  color: #fff;
+}
+
+.alert {
+  background-color: #000;
+  color: white;
+  margin: 0%;
+  padding: 0%;
+}
+
+.page-bg {
+  height: 100%;
+  width: 100%;
+}
+
+.text-h1 {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding-top: 30px;
+}
