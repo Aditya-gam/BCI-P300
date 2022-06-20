@@ -29,6 +29,7 @@ import Food from "./pages/Food";
 import Restroom from "./pages/Restroom";
 import SpellerSettings from "./pages/SpellerSettings";
 import Common from "./pages/Common";
+import About from "./pages/About";
 
 toast.configure();
 
@@ -202,7 +203,7 @@ function App() {
             />
             
              <Route
-              path="dashboard/alert/contact"
+              path="dashboard/contact"
               element={
                 isAuthenticated ? (
                   <Contact
@@ -296,6 +297,24 @@ function App() {
               element={
                 isAuthenticated ? (
                   <SpellerSettings
+                    animate={true}
+                    isAuthenticated={isAuthenticated}
+                    setAuth={setAuth}
+                    setRegister={setRegister}
+                    isOpen={isOpen}
+                    toggleIsOpen={toggleIsOpen}
+                  />
+                ) : (
+                  <Navigate to="/login" />
+                )
+              }
+            />
+            
+             <Route
+              path="about"
+              element={
+                isAuthenticated ? (
+                  <About
                     animate={true}
                     isAuthenticated={isAuthenticated}
                     setAuth={setAuth}

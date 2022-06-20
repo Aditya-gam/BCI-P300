@@ -51,9 +51,8 @@ const Footer = () => {
                 <a href="/login" className="FooterLink">Terms of Service</a>
                 </div>
               </div>
-              <div classname="FooterLinkItems">
+              <div className="FooterLinkItems">
                 <h1 className="FooterLinkTitle">Contact Us</h1>
-
                 <div>
                 <a href="/login" className="FooterLink">Contact</a>
                 </div>

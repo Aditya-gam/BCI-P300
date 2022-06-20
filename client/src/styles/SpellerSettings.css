@@ -1,0 +1,21 @@
+:root
+{
+    --blink-colour-green: green;
+    --blink-colour-red: red;
+    --blink-colour-blue: blue;
+}
+
+.blink-green
+{
+ background-color: var(--blink-colour-green);
+}
+
+.blink-red
+{
+ background-color: var(--blink-colour-red);
+}
+
+.blink-blue
+{
+ background-color: var(--blink-colour-blue);
+}

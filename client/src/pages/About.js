@@ -7,7 +7,7 @@ import Nav from "../components/NavbarDashboard";
 import "../styles/Ssvep.css";
 import "../styles/Dashboard.css";
 
-const Common = ({
+const About = ({
   isAuthenticated,
   setAuth,
   setRegister,
@@ -37,7 +37,7 @@ const Common = ({
       <div className="page-bg">
         <Fragment >
           <h1 className="text-h1">
-            Common Instructions
+            About Section
           </h1>
         </Fragment>
       </div>
@@ -46,4 +46,4 @@ const Common = ({
   );
 };
 
-export default Common;
+export default About;

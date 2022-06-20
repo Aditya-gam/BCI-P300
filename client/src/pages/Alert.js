@@ -54,8 +54,9 @@ const Alert = ({
             >
               SOS
             </ButtonR>
+            
             <ButtonR
-              to="/dashboard/alert/contact"
+              to="/dashboard/contact"
               className="blinker"
               smooth={true}
               duration={500}
@@ -69,6 +70,7 @@ const Alert = ({
             >
               Contact
             </ButtonR>
+
             {/* <ButtonR
               to="/dashboard/common"
               className="blinker"
