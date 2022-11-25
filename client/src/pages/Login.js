@@ -45,7 +45,7 @@ const Login = ({ setAuth }) => {
   };
 
   return (
-    <>
+    <div style={{ height: "100%" }}>
       <Navbar />
       <div className="fullpage">
         <Fragment>
@@ -95,7 +95,7 @@ const Login = ({ setAuth }) => {
           </main>
         </Fragment>
       </div>
-    </>
+    </div>
   );
 };
 

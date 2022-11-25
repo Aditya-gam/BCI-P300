@@ -169,58 +169,46 @@ function App() {
             <Route
               path="/alert"
               element={
-                isAuthenticated ? (
-                  <Alert
-                    animate={true}
-                    isAuthenticated={isAuthenticated}
-                    setAuth={setAuth}
-                    setRegister={setRegister}
-                    isOpen={isOpen}
-                    toggleIsOpen={toggleIsOpen}
-                  />
-                ) : (
-                  <Navigate to="/login" />
-                )
+                <Alert
+                  animate={true}
+                  isAuthenticated={isAuthenticated}
+                  setAuth={setAuth}
+                  setRegister={setRegister}
+                  isOpen={isOpen}
+                  toggleIsOpen={toggleIsOpen}
+                />
               }
             />
 
             <Route
-              path="dashboard/alert"
+              path="dashboard/alert/sos"
               element={
-                isAuthenticated ? (
-                  <Sos
-                    animate={true}
-                    isAuthenticated={isAuthenticated}
-                    setAuth={setAuth}
-                    setRegister={setRegister}
-                    isOpen={isOpen}
-                    toggleIsOpen={toggleIsOpen}
-                  />
-                ) : (
-                  <Navigate to="/login" />
-                )
+                <Sos
+                  animate={true}
+                  isAuthenticated={isAuthenticated}
+                  setAuth={setAuth}
+                  setRegister={setRegister}
+                  isOpen={isOpen}
+                  toggleIsOpen={toggleIsOpen}
+                />
               }
             />
-            
-             <Route
-              path="dashboard/contact"
+
+            <Route
+              path="dashboard/alert/contact"
               element={
-                isAuthenticated ? (
-                  <Contact
-                    animate={true}
-                    isAuthenticated={isAuthenticated}
-                    setAuth={setAuth}
-                    setRegister={setRegister}
-                    isOpen={isOpen}
-                    toggleIsOpen={toggleIsOpen}
-                  />
-                ) : (
-                  <Navigate to="/login" />
-                )
+                <Contact
+                  animate={true}
+                  isAuthenticated={isAuthenticated}
+                  setAuth={setAuth}
+                  setRegister={setRegister}
+                  isOpen={isOpen}
+                  toggleIsOpen={toggleIsOpen}
+                />
               }
             />
-            
-             <Route
+
+            <Route
               path="dashboard/water"
               element={
                 isAuthenticated ? (
@@ -237,8 +225,8 @@ function App() {
                 )
               }
             />
-            
-             <Route
+
+            <Route
               path="dashboard/fan"
               element={
                 isAuthenticated ? (
@@ -255,8 +243,8 @@ function App() {
                 )
               }
             />
-            
-             <Route
+
+            <Route
               path="dashboard/food"
               element={
                 isAuthenticated ? (
@@ -273,8 +261,8 @@ function App() {
                 )
               }
             />
-            
-             <Route
+
+            <Route
               path="dashboard/restroom"
               element={
                 isAuthenticated ? (
@@ -291,8 +279,8 @@ function App() {
                 )
               }
             />
-            
-             <Route
+
+            <Route
               path="dashboard/speller-settings"
               element={
                 isAuthenticated ? (
@@ -309,8 +297,8 @@ function App() {
                 )
               }
             />
-            
-             <Route
+
+            <Route
               path="about"
               element={
                 isAuthenticated ? (
@@ -327,8 +315,8 @@ function App() {
                 )
               }
             />
-            
-             <Route
+
+            <Route
               path="dashboard/common"
               element={
                 isAuthenticated ? (
